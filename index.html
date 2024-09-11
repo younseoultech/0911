@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#seoyoung{width: 680px; height: 480px; display: block;}
+		body{background: yellow;}
+		#tt, #wow{font-size: 4rem;}
+	</style>
+</head>
+<body>
+	<video src="wow.mp4" id="seoyoung"></video>
+<button id="wow">play</button>
+<div id="tt">서영이 생일추카합니다. </div>
+
+	<script type="text/javascript">
+
+	let playstate = "stop" ;
+	wow.onclick = function() { 
+		if (playstate == "stop") {
+			seoyoung.play();
+			wow.innerHTML = "STOP"
+			wow.style.background = "green"
+ 			playstate = "play" ;
+		} else if(playstate =="play"){
+			seoyoung.pause();
+			wow.innerHTML = "PLAY"
+			wow.style.background = "violet"
+			playstate = "stop"
+		}
+	
+	document.body.style.background = "blue";
+	tt.innerHTML = "윤정이가 추카합니다.wow";
+}
+
+	</script>
+
+</body>
+</html>
